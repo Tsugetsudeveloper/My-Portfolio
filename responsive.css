@@ -1,0 +1,41 @@
+
+/*RESPONSIVE*/
+/*
+@media (max-width: 1249px){
+
+	#intro,
+	#biografy,
+	#pan{
+		width: 62%;
+		height: auto;
+	}
+}
+
+@media (max-width: 1136px){
+
+	#intro,
+	#biografy,
+	#pan{
+		width: 61%;
+		height: auto;
+	}
+	#screen{
+		height: 400px;
+	}
+}
+
+@media (max-width: 1083px){
+
+	#aside{
+		height: 545px;
+	}
+}
+
+@media (max-width: 1041px){
+	#intro,
+	#biografy,
+	#pan{
+		width: 60%;
+		height: auto;
+	}
+}*/

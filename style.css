@@ -1,0 +1,406 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Segoe UI;
+	text-decoration: none;
+
+}
+
+body{
+	background: #003e73;
+}
+
+.clearfix{
+	float: none;
+	clear: both;
+}
+/*SCROllBAR*/
+
+::-webkit-scrollbar{
+	background: #333;
+	width: 6px;
+
+}
+
+::-webkit-scrollbar-thumb{
+	background: #0af;
+	border-radius: 15px;
+}
+
+/*ESCROLLBAR*/
+
+/*ANIMATION's*/
+
+/*@keyframes opacinav{
+	from{
+		opacity: 0;
+		margin-left: 30%;
+	}
+
+	to{
+		opacity: 1;
+		margin-left: 42%;
+	}
+}*/
+
+@keyframes shadows{
+	0%{
+		box-shadow: 0px 0px 10px 2px lightblue;
+	}
+
+	25%{
+		box-shadow: 0px 0px 0px 0px lightblue;
+	}
+
+	50%{
+		box-shadow: 0px 0px 10px 2px lightblue;
+	}
+
+	75%{
+		box-shadow: 0px 0px 20px 2px lightblue;
+	}
+
+	100%{
+		box-shadow: 0px 0px 10px 2px lightblue;
+	}
+}
+
+@keyframes showtitle{
+	from{
+		transform: translateY(-200%)
+	}
+
+	to{
+		transform: translateY(0%);
+	}
+}
+
+@keyframes showText{
+	from{
+		transform: translateX(-200%)
+	}
+
+	to{
+		transform: translateX(0%);
+	}
+}
+
+@keyframes showAside{
+	from{
+		opacity: 0;
+		transform: translateY(-200%);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes showCardone{
+	from{
+		opacity: 0;
+		transform: translateX(200%);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes showCardlast{
+	from{
+		opacity: 0;
+		transform: translateX(200%);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+/*EANIMATION's*/
+
+#screen{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+
+#header{
+	position: sticky;
+	top: 0px;
+	background: #2d88ff;
+	width: 100%;
+	height: 60px;
+	margin-top: -5px;
+	box-shadow: 0px 2px 20px 2px #222;
+}
+
+.list ul{
+	list-style: none;
+	margin-left: 42%;
+	animation-name: opacinav;
+	animation-duration: 2s;
+	animation-iteration-count: inherit;
+}
+
+.list ul li a{
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	line-height: 60px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #111;
+	transition: all 600ms;
+
+}
+
+.list ul li a:hover{
+	transform: scale(1.2);
+}
+
+/*CONTENT*/
+
+#content{
+	width: 1250px;
+	margin: 0px auto;
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+#article{
+	display: block;
+	width: 860px;
+	margin-left: 40px;
+	float: left;
+}
+
+.cards{
+	display: block;
+	background: #1a5bb1;
+	padding: 20px;
+	width: 100%;
+	min-height: 200px;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.cards:nth-child(2){
+	animation: showCardone 1.2s linear;
+}
+
+.cards:nth-child(3){
+	animation: showCardlast 1.4s linear;
+	color: black;
+}
+
+.cards h2{
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+}
+
+
+.cards p{
+	color: #fff;
+	font-size: 18px;
+}
+
+.cards:hover h2{
+	animation: showtitle 500ms linear;
+}
+
+.cards:hover p{
+	animation: showText 600ms linear;
+}
+
+#aside{
+	display: block;
+	background: #1a5bb1;
+	width: 25%;
+	min-height: auto;
+	border-radius: 10px;
+	float: left;
+	animation: showAside 800ms linear;
+}
+
+#aside img{
+	display: block;
+	margin: 0px auto;
+	width: 160px;
+	border: 5px solid #001e3f;
+	border-radius: 100%;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px 2px lightblue;
+	cursor: pointer;
+	transition: all 300ms;
+}
+
+#aside img:hover{
+	animation: shadows 2s infinite linear;
+}
+
+#aside h2{
+	display: block;
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 5px;
+	text-shadow: 2px 1px 3px #00aaff;
+}
+
+#aside p{
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+#aside .welcome{
+	font-size: 19px;
+}
+
+#misredes ul{
+	list-style: none;
+}
+
+#misredes ul li a{
+	display: block;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-shadow: 0px 2px 10px  #000,0px 2px 5px  #000;
+}
+
+.face{
+	display: block;
+	background: #00aaff;
+	width: 120px;
+	margin: 0px auto;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	border-radius: 10px 0px 10px 0px;
+	border: 2px solid #aaa;
+	transition: all 600ms;
+}
+
+.twit{
+	display: block;
+	background: #00eeff;
+	width: 120px;
+	margin: 0px auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 10px 0px 10px 0px;
+	border: 2px solid #aaa;
+	transition: all 600ms;
+}
+
+.insta{
+	display: block;
+	background: #ff0066;
+	width: 120px;
+	margin: 0px auto;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	border-radius: 10px 0px 10px 0px;
+	border: 2px solid #aaa;
+	transition: all 600ms;
+}
+
+.face:hover,
+.twit:hover,
+.insta:hover{
+	font-size: 20;
+	transform: scale(1.1);
+
+}
+
+#work{
+	display: flex;
+	max-width: 95%;
+	height: 300px;
+	margin: 0px auto;
+	padding: 15px;
+	padding-bottom: 20px;
+	background: #1a5bb1;
+	border-radius: 15px;
+	overflow-x: scroll;
+}
+
+#work::-webkit-scrollbar{
+	background: #333;
+	height: 8px;
+
+}
+
+#work .document{
+	display: block;
+	margin: 0px auto;
+	margin-right: 10px;
+}
+
+#work .document #card{
+	background: #1d0244;
+	width: 280px;
+	height: 300px;
+	border-radius: 10px;
+	transition: all 300ms;
+}
+
+#work .document #card .iconfill{
+	width: 100%;
+	height: 150px;
+	border-radius: 10px 10px 0px 0px;
+	object-fit: cover;
+	object-position: top;
+}
+
+#work .document #card a{
+	display: block;
+	margin-left: 15px;
+	font-weight: 500;
+	text-shadow: 2px 2px 2px #c3349d;
+}
+
+#work .document #card p{
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	padding: 10px;
+}
+
+#work .document #card:hover{
+	box-shadow: 0px 0px 10px 4px #c3349d;
+}
+
+
+/*ECONTENT*/
+/*FOOTER*/
+
+#footer{
+	width: 100%;
+	height: 50px;
+	background: #2d88ff;
+	text-align: center;
+	margin-top: 15px;
+}
+
+#footer a{
+	line-height: 50px;
+	font-size: 20px;
+	color: #444;
+	font-weight: 500;
+	text-shadow: 0px 0px 2px #777;
+}
+
+/*EFOOTER*/
